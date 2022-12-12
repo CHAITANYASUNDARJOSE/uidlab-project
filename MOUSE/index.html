@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        div 
+         {
+            width: 1120px;
+            padding-left: 160px;
+            border: 0px solid rgb(255, 255, 255);
+            margin: 60px;
+         } 
+        h1{
+            font-size: 50px;
+            font-family: Arial black;
+            color: rgb(0, 14, 136);
+            text-align: center;
+
+        }
+        h2{
+            font-size: 20px;
+            font-family: Courier New;
+        }
+    </style>
+    <title>Mouse events</title>
+</head>
+<body bgcolor="#ADD8E6">
+    <div>
+    <h1>MOUSE EVENTS</h1>
+    <h2>1 CLICKEVENT</h2>
+    <form>  
+        <input type="button" onclick="clickevent()" value="Click me"/>  
+    </form> 
+    <br><h2>2 MOUSEOVER EVENT</h2>
+    <h2 onmouseover="mouseoverevent()">Hey,Mouse over me </h1>
+    <br><h2>3 MOUSEUP EVENT AND MOUSEDOWN EVENT</h2>
+    <h2 id="myP" onmousedown="mousedownevent()" onmouseup="mouseupevent()">
+        Click the text! The mouseDown() function is triggered when the mouse button is pressed down over this paragraph, and sets the color of the text to red.
+        The mouseUp() function is triggered when the mouse button is released, and sets the color of the text to blue.
+    </h2>
+    
+    <br><h2>4 MOUSEMOVE EVENT</h2>
+    <h2 onmousemove="mousemoveevent()">Ha,Cool buddy move me to get ur gift!!!!!</h2>
+    <h1>REGULAR EXPRESSIONS</h1><br>
+
+    <h2>5 Search Method</h2>
+    <h2 >Here, we will find the psition of the word</h2>
+    <h2>Searching 'word' from above text the position is </h2>
+    <input type="button" onclick="f1()" value="Click here">
+    <h2 id="demo">Here, we will find the position of the word</h2>
+
+    <h2>6 Replace Method</h2>
+    
+    <h2 >This is UID project</h2>
+    <input type="button" onclick="f2()" value="Click here">
+
+    <h2 id="demo1">This is UID project</h2>
+
+    <script src="script.js"></script>
+    </div>
+</body>
+</html>
