@@ -1,0 +1,139 @@
+<DOCTYPE! html>
+	<head>
+		<title>
+		Cyber Nation
+		</title>
+		<style>
+		body{
+		background-color: lightblue;
+		border-style: dashed;
+		border-radius: 12px;
+        	padding: 5px;
+		}
+		
+		h1{
+		font-size: 30px;
+		text-align: center;
+		font-family: Lucida Console;
+		}
+		
+		table{
+		padding-right: 50%;
+		background-color: lightyellow;
+		}
+		
+		table.inner{
+		border: 100px;
+		}
+		
+		input[type=text], input[type=email], input[type=number], input[type=password]{
+		width: 50%;
+		padding: 6px 200px;
+		margin: 5px 0;
+		box-sizing: border-box;
+		}
+		
+		div.logo img{
+		float: left;
+		width: 150px;
+		height: auto;
+		}
+		
+		table tr td.f1{
+		font-size: 25px;
+		font-family: Lucida Console;
+		}
+		
+		</style>
+	</head>
+	<body text="black">
+		<div class = "logo">
+			<img src = "logo.png">
+		</div>
+		<h1>Student Registration Form</h1>
+		<form>
+			<table align="center" cellpadding = "10">
+				<tr>
+					<td class = "f1" style="width:50%"><label for = "name">First Name</label></td>
+					<td><input type = "text" name = "First Name" id = "name" required /></td>
+				</tr>
+				<tr>
+					<td class = "f1"><label for = "name1">Last Name</label></td>
+					<td><input type = "text" name = "Last Name" id = "name1" required></td>
+				</tr>
+				<tr>
+					<td class = "f1" style="width:50%"><label for = "mail">Email</label></td>
+					<td><input type = "email" name = "Email" id = "mail" required></td>
+				</tr>
+				<tr>
+					<td class = "f1"><label for = "num">Mobile</label></td>
+					<td><input type="text" name="Mobile" id = "num" required></td>
+				</tr>
+				<tr>
+					<td class = "f1"><label for = "pass">Password</label></td>
+					<td><input type="Password" name="Password" id = "pass" required></td>
+				</tr>
+				<tr>
+					<td class = "f1"><label for = "conpass">Confirm Password</label></td>
+					<td><input type="Password" name="Confirm Password" id = "conpass" required></td>
+				</tr>
+				<tr>
+					<td class = "f1">Gender</td>
+					<td><input type="radio" name="Gender" value="Male" id = "male" required>
+					<label for = "male">Male</label>
+					<input type="radio" name="Gender" value="Female" id = "female" required>
+					<label for = "female">Female</label>
+					</td>
+				</tr>
+				<tr>
+					<td class = "f1" style="width:50%"><label for = "colname">College</label></td>
+					<td><input type = "text" name = "College" id = "colname" required></td>
+				</tr>
+				<tr>
+					<td class = "f1">Participate</td>
+					<td><input type="checkbox" name="event" value="Cyber Conclave" id = "ff" />
+					<label for = "ff">Cyber Conclave</label>
+					<input type="checkbox" name="event" value="Cyber Industry Meet" id = "ff1" >
+					<label for = "ff1">Cyber Industry Meet</label><br>
+					<input type="checkbox" name="event" value="National Amrita Cyber Tech Fest" id = "ff2" >
+					<label for = "ff2">National Amrita Cyber Tech Fest</label>
+					<input type="checkbox" name="event" value="Cyber Abyaan" id = "ff3" >
+					<label for = "ff3">Cyber Abyaan</label>
+					</td>
+				</tr>
+				<tr>
+					<td class = "f1"><label for = "date">DOB</label></td>
+					<td><input type = "date" id = "date" required></td>
+				</tr>
+				<tr>
+					<td class = "f1"><label for = "upload">Upload your documents here</label></td>
+					<td><input type="file" name="upload" value="upload file" id = "upload" ></td>
+				</tr>
+				<tr>
+					<td class = "f1"><label for = "add">Address</label></td>
+					<td><textarea name = "Address" id = "add" rows = "10" cols = "50" required></textarea></td>
+				</tr>
+				<tr>
+					<td class = "f1"><label for = "cont">Country</label></td>
+					<td><select name="country" id ="cont" required>
+					<!--<option value="none" selected disabled hidden></option> -->
+					<option value="INDIA" default>INDIA</option> 
+					<option value="SRI LANKA" >SRI LANKA</option> 
+					<option value="AFGHANISTAN" >AFGHANISTAN</option> 
+					<option value="PAKISTHAN" >PAKISTHAN</option> 
+					<option value="USA" >USA</option> 
+					<option value="UK" >UK</option> 
+					<option value="FRANCE" >FRANCE</option> 
+					<option value="GERMANY" >GERMANY</option> 
+					<option value="RUSSIA"> RUSSIA</option> 
+					<option value="JAPAN" >JAPAN</option> 
+					<option value="KOREA" >KOREA</option> </select></td>
+				</tr>
+				<tr>
+					<td><input type = "submit" name = "submit"></td>
+					<td><input type = "reset" name = "reset"></td>
+				</tr>
+			</table>
+		</form>
+	</body>
+</html>
